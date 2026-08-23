@@ -25,7 +25,7 @@ function App() {
   }, [showIntro]);
   return <AuthProvider>
       <RiskStoreProvider>
-        <BrowserRouter>
+       <BrowserRouter basename="/AI-Riak-Manager">
           <AnimatePresence mode="wait">
             {showIntro && <IntroAnimation key="intro" onDone={() => setShowIntro(false)} />}
           </AnimatePresence>
